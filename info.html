@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ski Wonderland</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/base_style.css" />
+    <link rel="stylesheet" href="styles/contact_style.css" />
+    <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/info_style.css" />
+    <link rel="stylesheet" href="styles/info_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="c-header">
+      <nav>
+        <a href="index.html"><img src="media/logo.png" id="logo" /></a>
+        <div class="nav-list" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="info.html">INFORMATION</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>KODRA E DIELLIT-Попова Шапка</h1>
+    </div>
+    <div class="main-col2">
+      <h2>Popova Sapka Hotels & Accommodation</h2>
+      <p>
+        Popova Shapka is blessed with several hotels of varying quality nestled around the lift base & up on the mountain proper. Standards vary greatly & most hotels are only rated relative to the local area & may not equate to a similarly rated hotel in The Alps. Some of the hotels have recently been upgraded from their previously dilapidated state, much improving the comfort of guests. The newest hotel (and some might say the best) is Hotel Scardus. <br>Click on the pictures and you will be sent directly to the hotels' webpages. </br></p>
+    </div>
+    <div>
+    
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <a href="https://www.hotelscardus.com/">
+          <img src="styles/media/hotel222.jpg" style="width: 100%" />
+          <marquee class="hoteltitle">Hotel Scardus </marquee>
+        </a>
+
+      </div>
+
+      <div class="mySlides fade">
+        <a href="http://konak.com.mk/">
+          <img src="media/hotel444.jpg" style="width: 100%" />
+          <marquee class="hoteltitle">Hotel Konak </marquee>
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://www.noliskonak.com/">
+          <img src="media/hotel333.jpg" style="width: 100%" />
+          <marquee class="hoteltitle">Hotel Noli's Konak</marquee>
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://www.facebook.com/hotelboraa/photos">
+          <img src="media/hotel8.jpg" style="width: 100%" />
+          <marquee class="hoteltitle">Hotel Bora</marquee>
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://www.casaleone.mk/">
+          <img src="media/hotel55.jpg" style="width: 100%" />
+          <marquee class="hoteltitle">Hotel Casa Leone</marquee>
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://elemturs.mk/hotel-slavija-popova-sapka/">
+          <img src="media/hotel44.jpg" style="width: 100%" />
+          <marquee class="hoteltitle">Hotel Slavija </marquee>
+        </a>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+  </body>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <div >
+    <div class="main-col2">
+      <h2>Information</h2>
+      <p>Set amongst North Macedonia's highest peaks in the Shar (Šar) mountains, Popova Sapka (Popova Šapka, Popova Shapka) is home to some superb cat skiing operations and high alpine freeride terrain.
+
+        Even though the village & resort feels like a crumbly shadow of its former self, a visit to Popova Sapka is a cultural & culinary experience vastly different to other European ski holidays. Popova is not necessarily a family ski holiday destination as such, but anyone that can already ski & has their own backcountry touring gear will enjoy it immensely.
+      </p>
+    </div>
+    <div>
+      <div >
+        <div class="main-col2">
+          <h2>Skiing & Snowboarding, Lifts & Terrain</h2>
+          <p>
+            Popova Shapka ski resort will appeal to powder hounds looking for a sense of adventure & something completely different. The ski slopes are all set above the treeline on high alpine meadow terrain requiring very little snow base to become skiable.<br>
+The on-piste terrain in the resort is limited to about 20km of not so well-groomed trails (if you are lucky).</br> Skiable vertical is around 800m. Ski lifts include a couple of very old double chairs & several surface lifts, some of which have a questionable functionality. A new hooded six-seater chairlift was finally fully installed in 2019. It serves around 300m of skiable vertical including some tasty, advanced terrain. The off-piste has loads of opportunity & minimal competition, unless the cat ski clients have a down day! <br>There is night skiing on weekends on one of the lower surface tows.</br>
+<br>Only one lift is important. The double chair heading up to the 2,510m summit opens-up the real business at Popova Shapka - the expansive backcountry ski terrain. Access via the lift and then either human-powered or snowcat-powered! Terrain is varied and can include easy alpine bowls, steep chutes, tree skiing & everything in between. Several peaks can be climbed & skied without too much effort, including the area's tallest, Tito's Peak (Titov Vrv) (2,747m).</br>
+
+<br>The area is best experienced through a combination of ski touring via the chairlift plus cat skiing.</br></p>
+        </div>
+        <div >
+          <div class="main-col2">
+            <h2>Cat Skiing</h2>
+            <p>To truly experience the area, the main reason to ski Popova Sapka is cat skiing. The longest established cat ski company in Europe is based here, as are a group of upstart locals running new snowcats across some of the same terrain, much to the chagrin of the original operator! <br><a  class="a" href="https://www.powderhounds.com/listings-search-results?TourType=128&Country=Popova%20Sapka">See all Cat Skiing Tours that visit Kodra e DIELLIT-Popova Sapka here</a>.</br>
+          
+            </p>
+            <!-- <img src="media/picture1.jpg" style="height: 100px; width:100px"></img> -->
+        
+          </div>
+          <div>
+            <div >
+              <div class="main-col2">
+                <h2> Live Camera</h2>
+                <p>Elem Turs provides two cameras that are live all the time. From here you can see how Popova Sapka looks like virtualy. <br><a class="a"href="https://elemturs.mk/en/live-camera-popova-shapka/">Click here to be sent to view the two cameras</a><br>
+              
+                </p>
+                    
+              </div>
+              <div>
+         
+      <div class="nature">
+        <h1>Kodra e Diellit - Popova Sapka Tail Map</h1>
+        <p>One of the prettiest places to ski in </p>
+        <div>
+          <div class="nature-col">
+            <img src="media/map1.jpg" />
+            <div class="layer">
+              <h3>Tail Map</h3>
+            </div>
+          </div>
+      </div>
+      
+    
+  
+
+
+  <footer>
+    <div class="icons">
+      <a href="https://www.facebook.com/groups/kodrafreeriders" target="_blank"
+        ><i class="fa fa-facebook"></i
+      ></a>
+      <a href="https://twitter.com/kodrafreeriders" target="_blank"
+        ><i class="fa fa-twitter"></i
+      ></a>
+      <a href="https://www.instagram.com/kodrafreeriders" target="_blank"
+        ><i class="fa fa-instagram"></i
+      ></a>
+    </div>
+    <div class="copyright" align="center">
+      <script>
+        document.write("&copy;");
+        document.write(" 2022 - ");
+        document.write(" Agnesa Bexheti - All Rights Reserved.");
+      </script>
+    </div>
+  </footer>
+  <!-- <div> -->
+  <!-- <p>Nje paragraf kwenflwekfbvje hgivhrfeivuhwerdgh</p> -->
+  <!-- </div> -->
+</html>

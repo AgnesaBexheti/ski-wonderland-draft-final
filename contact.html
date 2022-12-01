@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ski Wonderland</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/base_style.css" />
+    <link rel="stylesheet" href="styles/contact_style.css" />
+    <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="c-header">
+      <nav>
+        <a href="index.html"><img src="media/logo.png" id="logo" /></a>
+        <div class="nav-list" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="info.html">INFORMATION</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>CONTACT US</h1>
+    </div>
+
+    <section class="location">
+      <iframe
+        src="https://maps.google.com/maps?q=popova%20shapka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>R1209 1217</h5>
+              <p>North Macedonia, Popova Shapka</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+389 123 123</h5>
+              <p>Monday to Sunday, 8AM to 4PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>popvasapka@gmail.com</h5>
+              <p>Email us for any questions or info</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter your name" required />
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <textarea
+              rows="8"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="icons">
+        <a
+          href="https://www.facebook.com/groups/kodrafreeriders"
+          target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/kodrafreeriders" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/kodrafreeriders" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <div class="copyright" align="center">
+        <script>
+          document.write("&copy;");
+          document.write(" 2022 - ");
+          document.write(" Agnesa Bexheti - All Rights Reserved.");
+        </script>
+      </div>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+  </body>
+</html>
